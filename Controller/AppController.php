@@ -35,7 +35,7 @@ class AppController extends Controller {
 
 	public $helpers = array('Html', 'Form', 'Bs', 'BsForm');
 
-	public $titre = 'Title';
+	public $title = 'Title';
 	public $description = 'Description';
 
 	public function beforeFilter() {
@@ -43,7 +43,7 @@ class AppController extends Controller {
 	}
 
 	public function beforeRender() {
-		$this->set('title_for_layout' , $this->titre);
+		$this->set('title_for_layout' , $this->title);
 		$this->set('description_for_layout' , $this->description);
 	}
 
